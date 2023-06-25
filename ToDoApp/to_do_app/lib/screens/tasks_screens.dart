@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/tasks_lists.dart';
+
 class TasksScreen extends StatelessWidget {
   const TasksScreen({super.key});
 
@@ -40,10 +42,12 @@ class TasksScreen extends StatelessWidget {
           const SizedBox(height: 30.0),
           Expanded(
             child: Container(
-                decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(20.0),
-            )),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20.0),
+              ),
+              child: tasksList(),
+            ),
           )
         ]),
       ),
