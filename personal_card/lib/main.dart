@@ -12,6 +12,20 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.cyan[700],
+        appBar: AppBar(
+          title: Center(
+            child: Text(
+              'My Info',
+              style: TextStyle(
+                fontFamily: 'PatrickHandSC',
+                fontSize: 45.0,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          backgroundColor: Colors.cyan[900],
+        ),
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
